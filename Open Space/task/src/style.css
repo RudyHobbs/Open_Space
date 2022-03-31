@@ -1,0 +1,174 @@
+.space {
+    background: url("space.png");
+    width: 80vw;
+    height: 100vh;
+    border-radius: 10px;
+    position: relative;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.planet-area {
+    width: 50%;
+    height:80%
+}
+
+.planet {
+    position: absolute;
+    transform: scale(50%);
+    left: -226px;
+    bottom: -226px;
+    border-radius: 0 0 0 20px;
+}
+
+.rocket {
+    position: absolute;
+    transform: scale(30%) rotate(25deg);
+    top: -20px;
+    left: 60px;
+}
+
+.control-panel {
+    width: 35%;
+    height:45%;
+    border-radius: 15px;
+    background-image: repeating-linear-gradient(45deg, black, black 10px,
+    yellow 10px, yellow 25px);
+    display: flex;
+    /*flex-direction: column;*/
+    justify-content: center;
+    align-items: center;
+}
+
+.control-panel__inner {
+
+    background: #252424;
+    border-radius: 15px;
+    width: 95%;
+    height: 95%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /*align-items: center;*/
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.passwordField {
+    color: yellow;
+    border: 1px solid yellow;
+    background-color: transparent;
+}
+
+.passwordButton {
+    background-color: yellow;
+}
+
+.passwordButton:hover {
+    cursor: grab;
+}
+
+.check-buttons {
+    /*border: 1px solid white;*/
+    width: 100%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /*align-self: center;*/
+    /*gap: 25px;*/
+}
+
+.check-buttons #check-button1 {
+    width: 30px;
+}
+
+.check-buttons #check-button2 {
+    width: 30px;
+}
+
+.check-buttons #check-button3 {
+    width: 30px;
+}
+
+.check-buttons #check-button4 {
+    width: 30px;
+}
+
+.check-buttons #check-button5 {
+    width: 30px;
+}
+
+.check-buttons #check-button6 {
+    width: 30px;
+}
+
+.levers {
+    /*border: 1px solid white;*/
+    width: 100%;
+    height: 65px;
+    /*padding: 0;*/
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    /*gap: 5px;*/
+}
+
+.levers #lever1 {
+    width: 50px;
+    height: 20px;
+    margin: 0;
+    transform-origin: 30px 30px;
+    transform: rotate(-90deg);
+}
+
+.levers #lever2 {
+    width: 50px;
+    height: 20px;
+    margin: 0;
+    transform-origin: 30px 30px;
+    transform: rotate(-90deg);
+}
+
+.levers #lever3 {
+    width: 50px;
+    height: 20px;
+    margin: 0;
+    transform-origin: 30px 30px;
+    transform: rotate(-90deg);
+}
+
+.levers #lever4 {
+    width: 50px;
+    height: 20px;
+    margin: 0;
+    transform-origin: 30px 30px;
+    transform: rotate(-90deg);
+}
+
+.levers #lever5 {
+    width: 50px;
+    height: 20px;
+    margin: 0;
+    transform-origin: 30px 30px;
+    transform: rotate(-90deg);
+}
+
+.submit {
+    background: red;
+    border: 1px solid white;
+    border-radius: 50%;
+    transform: rotateX(40deg);
+    font-size: 20px;
+    width: 100px;
+    height: 100px;
+    color: white;
+    order: 5;
+    align-self: flex-end;
+}
+
+.submit:hover:enabled {
+    cursor: grab;
+}

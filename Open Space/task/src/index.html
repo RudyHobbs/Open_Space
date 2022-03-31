@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Open Space</title>
+    <link rel="stylesheet" href="style.css">
+    <script async type="text/javascript" src="script.js"></script>
+</head>
+<body>
+  <div class="space">
+      <div class="planet-area">
+          <img class="planet" src="mars.png" alt="Planet Mars">
+          <img class="rocket" id="rocket" src="rocket.png" alt="Rocket on planet Mars">
+      </div>
+      <div class="control-panel">
+          <div class="control-panel__inner">
+                  <input class="passwordField" type="password" id="password" name="password">
+                  <input class="passwordButton" type="submit" id="ok" value="ok" onclick="enable()">
+              <div class="check-buttons">
+                  <input type="checkbox" id="check-button1" name="check-button" onchange="readyForLaunch()" disabled>
+                  <input type="checkbox" id="check-button2" name="check-button" onchange="readyForLaunch()" disabled>
+                  <input type="checkbox" id="check-button3" name="check-button" onchange="readyForLaunch()" disabled>
+                  <input type="checkbox" id="check-button4" name="check-button" onchange="readyForLaunch()" disabled>
+                  <input type="checkbox" id="check-button5" name="check-button" onchange="readyForLaunch()" disabled>
+                  <input type="checkbox" id="check-button6" name="check-button" onchange="readyForLaunch()" disabled>
+              </div>
+              <div class="levers">
+                  <input type="range" class="lever" id="lever1" name="lever" min="0" max="10" onchange="readyForLaunch()" disabled>
+                  <input type="range" class="lever" id="lever2" name="lever" min="0" max="10" onchange="readyForLaunch()" disabled>
+                  <input type="range" class="lever" id="lever3" name="lever" min="0" max="10" onchange="readyForLaunch()" disabled>
+                  <input type="range" class="lever" id="lever4" name="lever" min="0" max="10" onchange="readyForLaunch()" disabled>
+                  <input type="range" class="lever" id="lever5" name="lever" min="0" max="10" onchange="readyForLaunch()" disabled>
+              </div>
+                  <input class="submit" type="submit" id="launch" value="Launch" onclick="testLaunch()" disabled>
+          </div>
+      </div>
+  </div>
+</body>
+</html>
